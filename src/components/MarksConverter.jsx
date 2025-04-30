@@ -36,12 +36,14 @@ export default function MarksConverter() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="flex-grow py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div className="p-8">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-gray-800">Student Marks Converter</h1>
             <p className="mt-2 text-gray-600">Calculate percentage and convert between percentage and CGPA</p>
+          </div>
           </div>
 
           {/* Marks to Percentage Form */}
@@ -156,6 +158,19 @@ export default function MarksConverter() {
           </div>
         </div>
       </div>
+      <footer className="bg-gray-800 text-white py-2 px-4">
+        <div className="max-w-md mx-auto md:max-w-2xl">
+          <div className="flex flex-col items-center text-center space-y-4">
+            <p className="text-sm text-gray-400">Made with ❤️ by JAYANT KUMAR GUPTA</p>
+            <div className="w-full pt-4 border-t border-gray-700">
+              <p className="text-xs text-gray-400">
+                © {new Date().getFullYear()} Student Tools. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+    
   );
 }
